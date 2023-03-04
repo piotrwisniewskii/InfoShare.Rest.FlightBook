@@ -8,7 +8,7 @@ namespace InfoShare.Rest.FlightBook.API.Controllers
     public class NumbersController : ControllerBase
     {
         [HttpGet("random")]
-        public int GetNumber()
+        public ActionResult<int> GetNumber()
         {
             return 1;
         }
