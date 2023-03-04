@@ -18,5 +18,19 @@ namespace InfoShare.Rest.FlightBook.API.Mappers
                 Vendor = plane.Vendor
             };
         }
+
+        public static Plane ToEntity(this PlaneDto dto) 
+        {
+            return new Plane
+            {
+                AvaibleRows = dto.AvaibleRows,
+                AvaibleSeats = dto.AvaibleSeats,
+                Model = dto.Model,
+                Registration = dto.Registration,
+                RegistrationDate = dto.RegistrationDate,
+                UpdateDate = dto.UpdateDate,
+                Vendor = dto.Vendor
+            };
+        }
     }
 }

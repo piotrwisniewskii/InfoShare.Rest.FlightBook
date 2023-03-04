@@ -8,6 +8,6 @@
         public int AvaibleRows { get; set; }
         public int AvaibleSeats { get; set; }
         public DateTime RegistrationDate { get; set; }
-        public DateTime UpdateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
     }
 }

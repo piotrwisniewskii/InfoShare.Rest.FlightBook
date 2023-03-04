@@ -17,8 +17,7 @@ namespace InfoShare.Rest.FlightBook.API.Database
                     AvaibleSeats = 6,
                     Model = "737-NG",
                     UpdateDate = DateTime.Now
-                },
-          
+                } 
             });
             context.SaveChanges();
         }
